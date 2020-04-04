@@ -1,0 +1,26 @@
+import React from "react";
+import "./Header.css";
+
+//bootstrap
+import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+
+const Header = () => {
+  return (
+    <div>
+      <Navbar mt="5px" bg="primary" variant="dark">
+        <Navbar.Brand href="#home">Hello Friends</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#features">Features</Nav.Link>
+          <Nav.Link href="#blog">Blog</Nav.Link>
+        </Nav>
+        <Form inline>
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button variant="outline-light">Search</Button>
+        </Form>
+      </Navbar>
+    </div>
+  );
+};
+
+export default Header;
